@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./CSS/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav class="nav-item">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact-wraper">
+        <h1> Contact me:</h1>
+        <p>Please fill out the contact form and I'll get back to you as soon as possible. (* fields are requiered)
+        </p>
+        <form method="POST">
+            <fieldset>
+                <legend>Contact information</legend>
+                <label for="firstname">Your name*</label>
+                <input type="text" id="firstname" name="firstname" required maxlength="8" size="10" class="required">
+
+                <label for="lastname">Your Last name</label>
+                <input type="text" id="lastname" name="lastname">
+
+                <label for="phone">Phone number*</label>
+                <input type="tel" id="phone" name="phone" required class="required">
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" size="30" required class="required">
+
+                <label for="info">I'll like more information on (please select one)*</label>
+                <label><input type="radio" id="HTML" name="info" value="HTML" checked>HTML</label>
+                <label><input type="radio" id="CSS" name="info" value="CSS">CSS</label>
+                <label><input type="radio" id="JS" name="info" value="JavaScript">JavaScript</label>
+
+                <label for="method">Please select your preferred contact method*</label>
+                <label><input type="radio" id="byphone" name="method" value="by phone">By Phone</label>
+                <label><input type="radio" id="byemail" name="method" value="by email" checked>By Email</label>
+
+                <label for="comments">Comments*</label>
+                <textarea id="comments" name="comments" rows="5" cols="33" placeholder="Please type your comments" required class="required"></textarea>
+
+                <label>
+                    <input id="subscribe" name="subscribe" type="checkbox"  checked>Add me to your email list
+                </label>
+            </fieldset>
+            <button id="submit-button" type="submit" disabled>Submit!!!</button>
+        </form>
+
+    </div>
+
+
+
+    <footer>
+        <right>
+            <right>
+                <p>This page was built using: </p>
+                <p id="array"></p>
+            </right>
+        </right>
+        <left>
+            <p>Links:</p>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </left>
+    </footer>
+    <script src="./JavaScript/sumit.js"></script>
+    <script src="./JavaScript/footer.js"></script>
+</body>
+
+</html>
